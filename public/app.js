@@ -2,6 +2,8 @@ const API = "/api/portfolio";
 let all = {};
 let current = 1;
 
+let studentNum = 10;
+
 const lessonNames = [
   "1차시","2차시","3차시","4차시","5차시",
   "6차시","7차시","8차시","9차시","10차시"
@@ -11,7 +13,7 @@ function draw(q = ""){
   const grid = document.getElementById("grid");
   grid.innerHTML = "";
 
-  for(let i = 1; i <= 24; i++){
+  for(let i = 1; i <= studentNum; i++){
     const name = `${i}번 친구`;
     if(!name.includes(q)) continue;
 
