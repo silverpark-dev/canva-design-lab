@@ -3,7 +3,8 @@ let all = {};
 let current = 1;
 
 let studentNum = 12;
- 
+
+// 수업 차시
 const lessonNames = [
   "1차시","2차시","3차시","4차시","5차시",
   "6차시"
@@ -29,7 +30,7 @@ function draw(q = ""){
         <span class="dot"></span>
       </div>
       <h3>${name}</h3>
-      <div class="count">${saved}/10 작품 등록됨 →</div>
+      <div class="count">${saved}/${lessonNames.length} 작품 등록됨 →</div>
     `;
     grid.appendChild(card);
   }
